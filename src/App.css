@@ -1,4 +1,22 @@
 header{
   height: 65px;
   background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Karla';
+  color: #FFFFFF;
+}
+
+.header--title{
+  margin-left: 40px;
+  font-size: 35px;
+  letter-spacing: -0.1em;
+}
+
+.header--github{
+  margin-right: 40px;
+  font-size:20px;
+  color: #FFFFFF;
+
 }
