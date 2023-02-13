@@ -18,3 +18,29 @@ header{
   font-size:20px;
   color: #FFFFFF;
 }
+
+.meme--container{
+  display: flex;
+  flex-direction: column;
+}
+
+.meme--textInput{
+  margin-block: 30px;
+  margin-inline: 20px;
+  width: 500px;
+  height: 25px;
+}
+
+.meme--textField{
+  display:flex;
+  justify-content: space-between;
+}
+
+.meme--button{
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  border-radius: 5px;
+  color: #FFFFFF;
+  margin-block:20px;
+  margin-inline: 20px;
+  height: 50px;
+}

@@ -12,23 +12,29 @@ export default function Meme() {
     setText2(event.target.value);
   }
   return (
-    <div>
-      <div>
+    <div className="meme--container">
+      <div className="meme--textField">
         <input
           id="text1"
           type={"text"}
+          className="meme--textInput"
           value={text1}
           onChange={handleText1Change}
         />
         <input
           id="text2"
           type={"text"}
+          className="meme--textInput"
           value={text2}
           onChange={handleText2Change}
         />
       </div>
 
-      <input type="button" value="Get a new meme image  🖼" />
+      <input
+        className="meme--button"
+        type="button"
+        value="Get a new meme image  🖼"
+      />
     </div>
   );
 }
