@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import memesData from "../memesData.js";
+import memesData from "../data/memesData.js";
 
 export default function Meme() {
   const [text1, setText1] = useState("Bu site");
@@ -12,9 +12,12 @@ export default function Meme() {
   function handleText2Change(event) {
     setText2(event.target.value);
   }
+  function handleClick() {
+    console.log(memesData.data.memes[(Math.random() * 100).toFixed()].url); // getting random image from data
+  }
   return (
     <main>
-      <form className="form">
+      <div className="form">
         <input
           // id="text1"
           type={"text"}
@@ -32,8 +35,10 @@ export default function Meme() {
           // onChange={handleText2Change}
         />
 
-        <button className="form--button">Get a new meme image 🖼</button>
-      </form>
+        <button className="form--button" onClick={handleClick}>
+          Get a new meme image 🖼
+        </button>
+      </div>
     </main>
   );
 }
