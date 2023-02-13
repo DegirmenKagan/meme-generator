@@ -12,8 +12,10 @@ export default function Meme() {
   function handleText2Change(event) {
     setText2(event.target.value);
   }
-  function handleClick() {
-    console.log(memesData.data.memes[(Math.random() * 100).toFixed()].url); // getting random image from data
+  function getMemeImage() {
+    const memesArray = memesData.data.memes;
+    const randomNum = Math.floor(Math.random() * memesArray.length);
+    console.log(memesArray[randomNum]);
   }
   return (
     <main>
@@ -35,7 +37,7 @@ export default function Meme() {
           // onChange={handleText2Change}
         />
 
-        <button className="form--button" onClick={handleClick}>
+        <button className="form--button" onClick={getMemeImage}>
           Get a new meme image 🖼
         </button>
       </div>
