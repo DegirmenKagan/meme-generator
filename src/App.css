@@ -28,6 +28,8 @@ header{
 }
 
 main{
+  display: flex;
+  flex-direction: column;
   padding:36px;
 }
 
@@ -54,4 +56,9 @@ main{
   color: white;
   border: none;
   cursor: pointer;
+}
+
+.meme--image{
+  max-width: 100%;
+  object-fit: contain;
 }
