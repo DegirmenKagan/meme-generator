@@ -9,7 +9,7 @@ body {
 
 header{
   height: 65px;
-  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  background: linear-gradient(90deg, #805e22 1.18%, #d37a26 100%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,7 +52,7 @@ main{
   font-family: "Karla", sans-serif;
   font-size: 20px;
   border-radius: 5px;
-  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  background: linear-gradient(90deg, #805e22 1.18%, #d37a26 100%);
   color: white;
   border: none;
   cursor: pointer;
